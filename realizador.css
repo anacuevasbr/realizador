@@ -1,7 +1,14 @@
 video{
-  height:150px
+  height:150px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
 }
 
+canvas{
+  align-self: center;
+}
 body {
     background: black;
+    align-content: center;
 }
