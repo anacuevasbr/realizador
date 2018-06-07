@@ -4,8 +4,25 @@ video{
   border-width: 5px;
   border-color: black;
 }
+#canvas-container {
+   width: 100%;
+   text-align:center;
+}
 
-canvas{
+#video-container {
+   width: 100%;
+   text-align:center;
+}
+
+#control-container {
+   width: 100%;
+   text-align:center;
+}
+p{
+  color: white;
+}
+canvas {
+   display: inline;
   align-self: center;
 }
 body {

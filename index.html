@@ -6,34 +6,45 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <canvas id="mycanvas" width="500" height="300">
-      Your browser does not support the HTML5 canvas tag.
-    </canvas>
+    <div id="canvas-container">
+      <canvas id="mycanvas" width="500" height="300">
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+    </div>
     <br>
-    <video id="All" muted autoplay onclick="asignvideo('All', 150, 266.6)">
-      <source src=All.mp4 type=video/mp4>
-    </video>
-    <video id="Jin" muted autoplay onclick="asignvideo('Jin', 150, 84.1667)">
-      <source src=Jin.mp4 type=video/mp4>
-    </video>
-    <video id="Jhope" muted autoplay onclick="asignvideo('Jhope', 150, 84.1667)">
-      <source src=Jhope.mp4 type=video/mp4>
-    </video>
-    <video id="Suga" muted autoplay onclick="asignvideo('Suga', 150, 84.1667)">
-      <source src=Suga.mp4 type=video/mp4>
-    </video>
-    <video id="Jimin" muted autoplay onclick="asignvideo('Jimin', 150, 84.1667)">
-      <source src=Jimin.mp4 type=video/mp4>
-    </video>
-    <video id="Jungguk" muted autoplay onclick="asignvideo('Jungguk', 150, 84.1667)">
-      <source src=Jungguk.mp4 type=video/mp4>
-    </video>
-    <video id="RM" muted autoplay onclick="asignvideo('RM', 150, 84.1667)">
-      <source src=RM.mp4 type=video/mp4>
-    </video>
-    <video id="V" muted autoplay onclick="asignvideo('V', 150, 84.1667)">
-      <source src=V.mp4 type=video/mp4>
-    </video>
+    <div id="video-container">
+      <video id="All" muted autoplay onclick="asignvideo('All', 150, 266.6)">
+        <source src=All.mp4 type=video/mp4>
+      </video>
+      <video id="Jin" muted autoplay onclick="asignvideo('Jin', 150, 84.1667)">
+        <source src=Jin.mp4 type=video/mp4>
+      </video>
+      <video id="Jhope" muted autoplay onclick="asignvideo('Jhope', 150, 84.1667)">
+        <source src=Jhope.mp4 type=video/mp4>
+      </video>
+      <video id="Suga" muted autoplay onclick="asignvideo('Suga', 150, 84.1667)">
+        <source src=Suga.mp4 type=video/mp4>
+      </video>
+      <video id="Jimin" muted autoplay onclick="asignvideo('Jimin', 150, 84.1667)">
+        <source src=Jimin.mp4 type=video/mp4>
+      </video>
+      <video id="Jungguk" muted autoplay onclick="asignvideo('Jungguk', 150, 84.1667)">
+        <source src=Jungguk.mp4 type=video/mp4>
+      </video>
+      <video id="RM" muted autoplay onclick="asignvideo('RM', 150, 84.1667)">
+        <source src=RM.mp4 type=video/mp4>
+      </video>
+      <video id="V" muted autoplay onclick="asignvideo('V', 150, 84.1667)">
+        <source src=V.mp4 type=video/mp4>
+      </video>
+    </div>
     <br>
-    <button onclick="playpause()">Play/Pause</button>
+    <div id="control-container">
+      <button onclick="playpause()">
+          <img id="yona" src="https://image.flaticon.com/icons/png/512/27/27185.png" width="50"/>
+      </button>
+      <p id="current-time">0:0</p>
+      <p>Define loop as:start:end:number of repetitions</p> <input type="text" id="myText" value="Mickey">
+      <button onclick="initloop()">Try it</button>
+    </div>
   </body>
